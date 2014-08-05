@@ -18,7 +18,7 @@
 		position:absolute;
 		top:0;
 		width:100%;
-		height:70px;
+		height:64px;
 		background-color: #FFFFFF;
 		z-index: 1;
 	}
@@ -32,7 +32,7 @@
 	.container{
 		position:absolute;
 		width:100%;
-		height:120%;
+		height:100%;
 		background: url('bgPattern.png');
 	}
 
@@ -45,8 +45,9 @@
 		padding: 0 auto;
 	}
 	.title{
-		margin-left: 64px;
-		margin-top: 200px;
+		padding-left: 50%;
+		margin-left: -329px;
+		margin-top: 215px;
 	}
 	.top-menu{
 		position:absolute;
@@ -82,17 +83,27 @@
 	.top-menu a.select .select {
 		display:inline; 
 	}
-
+	.gallery{
+		position: absolute;
+		right: 30px;
+		top: 480px;
+	}
+	.gallery-box{
+		width: 478px;
+		height:122px;
+		background: black;
+		opacity: 0.2;
+	}
 	.intro{
 		width: 350px;
 		height: 150px;
+		margin-left: 60px;
 		font-family: 'BareunDotum1';
-		font-size: 12pt; 
+		font-size: 11pt; 
 		color: #959595;
 		line-height: 150%; 
-		margin-top: 100px;
+		margin-top: 150px;
 	}
-	
 	</style>
 </head>
 
@@ -101,7 +112,7 @@
 		<div class="menu-container">
 			<div class="menu">
 				<a href="home.html">
-					<img src="identity.png" width= "145px"height="70px">
+					<img src="identity.png" width= "115px"height="54px" style="margin-top: 5px; margin-left: 20px;">
 				</a>
 				<div class="top-menu">
 					<a href="about.html" >
@@ -120,7 +131,16 @@
 			</div>
 		</div>
 		<div class="contents">
-			
+			<img class="title" src="homeTitle.png">
+			<div class="intro">
+				HELLO! My name is MinYeong,Song.<br>And Welcome to my design portfolio.<br>I&apos;m graphic designer and please<br>watch my works shown this website.:)
+			</div>
+			<div class="gallery">
+				<img src="indexDeco.png">
+				<div class="gallery-box">
+					<>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

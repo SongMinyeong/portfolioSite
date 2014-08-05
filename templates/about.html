@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style>
+	*{
+		box-sizing: border-box;
+	}
+	body{
+		margin:0;
+		padding:0;
+	}
+	@font-face {
+	  font-family: 'Mohave-Italics';
+	  src: url('/static/Mohave-Italics.otf');
+	}
+	@font-face {
+	  font-family: 'Mohave-Bold';
+	  src: url('/static/Mohave-Bold.otf');
+	}
+	@font-face {
+	  font-family: 'BareunDotum1';
+	  src: url('/static/BareunDotum1.ttf');
+	}
+	@font-face {
+	  font-family: 'BareunDotum2';
+	  src: url('/static/BareunDotum2.ttf');
+	}
+	.menu-container{
+		position:absolute;
+		top:0;
+		width:100%;
+		height:64px;
+		background-color: #FFFFFF;
+		z-index: 1;
+	}
+
+	.menu {
+		position:relative;
+		width: 950px;
+		height: 100%;
+		margin: 0 auto;
+	}
+	.container{
+		position:absolute;
+		width:100%;
+		height:100%;
+		background: url('/static/bgPattern.png');
+	}
+
+	.contents{
+		z-index: 0;
+		position:relative;
+		height:100%;
+		width:950px;
+		margin:0 auto;
+		padding: 0 auto;
+	}
+	.title{
+		padding-left: 50%;
+		margin-left: -329px;
+		margin-top: 215px;
+	}
+	.top-menu{
+		position:absolute;
+		top:2px;
+		right:0px;
+	}
+
+	.top-menu a {
+		text-decoration: none;
+		margin-left:2px;
+	}
+
+	.top-menu a .normal {
+		display: inline;
+	}
+
+	.top-menu a .select {
+		display: none;
+	}
+
+	.top-menu a:hover .normal {
+		display:none; 
+	}
+
+	.top-menu a:hover .select {
+		display:inline; 
+	}
+
+	.top-menu a.select .normal {
+		display:none; 
+	}
+	
+	.top-menu a.select .select {
+		display:inline; 
+	}
+
+	.about{
+		position: absolute;
+		margin-top: 200px;
+		margin-left: 184px;
+	}
+
+	.aboutHello{
+		position:absolute;
+		margin-left: 420px;
+		margin-top: 250px;
+		font-family: 'Mohave-Italics';
+		font-size: 11pt; 
+		color: #959595;
+	}
+
+	.aboutName{
+		position:absolute;
+		margin-left: 420px;
+		margin-top: 262px;
+		font-family: 'Mohave-Bold';
+		font-size: 21pt; 
+	}
+
+	.aboutMe1{
+		position: absolute;
+		font-family: 'BareunDotum1';
+		font-size: 8pt; 
+		color: #959595;
+		line-height: 150%; 
+	}
+
+	.aboutMe2{
+		position: absolute;
+		font-family: 'BareunDotum2';
+		font-size: 8pt; 
+		color: #959595;
+	}
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="menu-container">
+			<div class="menu">
+				<a href="/">
+					<img src="/static/identity.png" width= "115px"height="54px" style="margin-top: 5px; margin-left: 20px;">
+				</a>
+				<div class="top-menu">
+					<a href="/about" class="select">
+						<img class="normal" src="/static/menuAbout.png">
+						<img class="select" src="/static/menuAboutSelect.png">
+					</a>
+					<a href="worksDesignProject01.html">
+						<img class="normal" src="/static/menuWorks.png">
+						<img class="select" src="/static/menuWorksSelect.png">
+					</a>
+					<a href="contact.html">
+						<img class="normal" src="/static/menuContact.png">
+						<img class="select" src="/static/menuContactSelect.png">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="contents">
+			<img class="about" src="/static/aboutBox.png">
+			<img src="/static/aboutMe.svg" class="about" style="top: 65px; left: 60px;">
+			<div class="aboutHello">
+				HELLO! THIS IS MY PORTFOLIO!
+			</div>
+			<div class="aboutName" style="color: #4BBCA1;">
+				SONG MIN-YEONG
+			</div>
+			<div class="aboutMe2" style="margin-top: 310px; margin-left: 425px">
+				생년월일
+			</div>
+			<div class="aboutMe1" style="margin-top:308px; margin-left: 470px">
+				1996. 05. 27
+			</div>
+			<div class="aboutMe2" style="margin-top: 330px; margin-left: 425px">
+				학교
+			</div>
+			<div class="aboutMe1" style="margin-top:328px; margin-left: 470px">
+				미림여자정보과학고등학교 뉴미디어디자인과
+			</div>
+			<div class="aboutMe2" style="margin-top: 350px; margin-left: 425px">
+				동아리
+			</div>
+			<div class="aboutMe1" style="margin-top:348px; margin-left: 470px">
+				디자인 리서치
+			</div>
+
+			<div class="aboutMe1" style="margin-top:375px; margin-left: 425px">
+				ITQ 아래한글, 한글파워포인트, 한글엑셀 자격증 취득 (2012.08.30-2013.02.21)<br>
+				ACA Adobe Photoshop 자격증 취득 (2012.11.28)<br>
+				영 마이스터 일러스트레이터 및 캐릭터 공모전 동상 (2013.05.27)<br>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
